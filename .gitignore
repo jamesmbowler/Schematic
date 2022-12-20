@@ -43,3 +43,8 @@ pom.xml.versionsBackup
 
 ### just use ###
 /.pom.xml.temp
+
+### Gradle ###
+.gradle
+/build/
+gradle/wrapper/gradle-wrapper.properties

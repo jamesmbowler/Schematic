@@ -1,6 +1,7 @@
 package com.bjoernkw.schematic.autoconfiguration;
 
 import com.bjoernkw.schematic.TablesController;
+import com.bjoernkw.schematic.dbtypes.DbQueries;
 import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
@@ -14,12 +15,14 @@ public class SchematicAutoConfiguration {
     private final JdbcTemplate jdbcTemplate;
 
     public SchematicAutoConfiguration(JdbcTemplate jdbcTemplate) {
+
         this.jdbcTemplate = jdbcTemplate;
     }
 
     @Bean
     @ConditionalOnMissingBean
     public TablesController tablesController() {
+
         return new TablesController(jdbcTemplate);
     }
 }
