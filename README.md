@@ -1,5 +1,8 @@
 # Schematic
 
+This fork supports mysql, and gradle. So far, the only query that needed to be different for mysql 
+was the "get tables" query.
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.bjoernkw/schematic/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.bjoernkw/schematic)
 
